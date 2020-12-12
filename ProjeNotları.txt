@@ -1,0 +1,35 @@
+Projeyi Visual Studio 2019 da .Net Core 3.1 sürümünde geliştirdim.
+
+İlk açılış ekranı swagger olcak şekilde ayarlandı. Bu sayede daha kolay Api methodlarını test edebilirsiniz.
+
+Proje kolay çalışsın, kurulum gerektirmesin diye In Memory database kullandım. 
+Bazı kayıtları Startup 'ta ekledim.(User ve City). Aşağıda bilgilerini yazacağım fakat Startup dosyasındanda erişebilirsiniz.
+
+Herhangi bir hata ile karşılaşmazı durumunda ExceptionMiddleware'de yakalayıp hatayı generic şekilde basmaya çalıştım.
+
+DataAnnotaion ile modellerin valid durumlarına ValidateModelFilter ile baktım.
+
+Log dosyası oluşturdum. İşlem adımlarını loglama imkanı oluşturdum. Süre kısıtılı oldğı için detaylı ve güzel loglar yazdıramadım.
+
+Automapper kullanmaya çalıştım fakat süre yetişmedi. 
+Client tarafına Dbcontext classlarını eriştirmemek için DTO objelerini kullandım
+
+Projeyi 4 katmandan oluşturdum.
+
+Service tarafında aklıma gelen kontrolleri ekledim ve bunlara uygun mesaj vermeye çalıştım.
+
+2.Bölüm için şu şekilde bir kurgu oluşturdum.
+   * Kişiler rota şeklinde gidecekleri şehirleri sisteme kayıt edecek
+   * Arama yapanlar ise bu rota yönü önemsiz şekilde kendi başlangıç ve bitişlerine uygun ise görüntüleyebilecek
+   *** Yapamadığım aklıma gelen en büyük kısım rotanın önemli olmasıydı fakat yetiştiremedim
+
+
+User Guid değerleri
+
+efe997f6-823e-4ad2-a7df-22ff0ab59eac
+60e709f3-4f3b-4833-838d-296a9e345b6d
+bc1bf525-5234-467f-b743-7241487bc3d2
+
+
+
+
